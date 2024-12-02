@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmmaking Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="landing">
+        <h2>Director | DoP</h2>
+        <button onclick="scrollToWork()">Enter Site</button>
+    </section>
+
+    <section id="work">
+        <h2>Work</h2>
+        <div class="categories">
+            <button onclick="showCategory('shortfilms')">Short Films</button>
+            <button onclick="showCategory('musicvideos')">Music Videos</button>
+            <button onclick="showCategory('commercials')">Commercials</button>
+        </div>
+        <div id="gallery"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
